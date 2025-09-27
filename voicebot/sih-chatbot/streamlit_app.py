@@ -4,7 +4,7 @@ from utils.helper import load_data, get_data_from_query, create_chart, recognize
 
 # --- Page Configuration ---
 st.set_page_config(
-    page_title="Groundwater Chatbot",
+    page_title="JalMitra",
     page_icon="💧",
     layout="wide"
 )
@@ -108,5 +108,6 @@ if user_query or (user_query := st.chat_input("Ask a question about groundwater 
             st.dataframe(response_df, use_container_width=True)
         if chart_figure:
             st.plotly_chart(chart_figure, use_container_width=True)
+
 
 # Here is a video from YouTube about the development of a real-time speech-to-text application with Streamlit. This video is relevant as it provides a practical example of implementing a speech-to-text feature in a Streamlit application, which is a core component of your project.
